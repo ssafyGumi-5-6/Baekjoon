@@ -7,20 +7,18 @@ import java.util.StringTokenizer;
 
 class Ant {
 	char name;
-	int moveTime;
 	public Ant(char name) {
 		this.name = name;
 	}
 }
 
 class FAnt extends Ant {
-	public FAnt(char name, int time) {
+	public FAnt(char name) {
 		super(name);
-		moveTime = time;
 	}
 	
 	public boolean checkNext(Ant ant) {
-		if(ant instanceof SAnt && moveTime <= 0) {
+		if(ant instanceof SAnt) {
 			return true;
 		}
 		return false;
@@ -47,7 +45,7 @@ public class BJ3048 {
 		
 		for(int i = 0; i < N1 + N2; i++) {
 			if(i < N1) {
-				ants[i] = new FAnt(fAntName[N1 - 1 - i], N1 - 1 - i);
+				ants[i] = new FAnt(fAntName[N1 - 1 - i]);
 			} else {
 				ants[i] = new SAnt(sAntName[i - N1]);
 			}
@@ -63,7 +61,6 @@ public class BJ3048 {
 						ants[j+ 1] = temp;
 						j++;
 					}
-					ants[j].moveTime--;
 				}
 			}
 		}
