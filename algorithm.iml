@@ -7,6 +7,7 @@
       <sourceFolder url="file://$MODULE_DIR$/Baekjoon/이경창/test" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Baekjoon/이경창/datastructure" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Baekjoon/이경창/graph" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Baekjoon/이경창/greedy" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
