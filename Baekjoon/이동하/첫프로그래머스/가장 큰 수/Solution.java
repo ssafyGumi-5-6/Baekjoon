@@ -6,7 +6,7 @@ class Solution {
 		for (int i = 0; i < numbers.length; i++) data.add(numbers[i]);
 		data.sort((o1, o2) -> {
 			String oo1 = String.valueOf(o1); String oo2 = String.valueOf(o2);
-			return -Integer.compare(Integer.valueOf(oo1 + oo2), Integer.valueOf(oo2 + oo1));
+			return -((oo1+oo1+oo1+oo1).compareTo(oo2+oo2+oo2+oo2));
 		});
 		String answer = "";
 		StringBuilder sb = new StringBuilder();
